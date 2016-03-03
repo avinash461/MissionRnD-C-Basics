@@ -10,8 +10,8 @@ ERROR CASES:
 
 NOTES:
 */
-
+#pragma warning(disable:4996)
 int sum(int a, int b)
 {
-	return 0;
+	return a+b;
 }

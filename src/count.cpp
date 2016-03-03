@@ -12,5 +12,17 @@ ERROR CASES: Return -1 in error cases.
 NOTES:
 */
 int count(int num1, int num2) {
-	return 0;
+	int i, c = 0;
+	i = 1;
+	if (num1 <= 0)
+	{
+		return -1;
+	}
+	//loop only for multiples of num1
+	while ((num1*i) <= num2)
+	{
+		c++;
+		i++;
+	}
+	return c;
 }
